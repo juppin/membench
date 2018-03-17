@@ -1,0 +1,35 @@
+$ dmesg | grep Clocks: | cut -d] -f2
+ Clocks: CPU:550.000MHz, DDR:400.000MHz, AHB:200.000MHz, Ref:25.000MHz
+
+
+$ stream_4.6MB 
+-------------------------------------------------------------
+STREAM version $Revision: 5.10 $
+-------------------------------------------------------------
+This system uses 8 bytes per array element.
+-------------------------------------------------------------
+Array size = 200000 (elements), Offset = 0 (elements)
+Memory per array = 1.5 MiB (= 0.0 GiB).
+Total memory required = 4.6 MiB (= 0.0 GiB).
+Each kernel will be executed 10 times.
+ The *best* time for each kernel (excluding the first iteration)
+ will be used to compute the reported bandwidth.
+-------------------------------------------------------------
+Your clock granularity/precision appears to be 3 microseconds.
+Each test below will take on the order of 33915 microseconds.
+   (= 11305 clock ticks)
+Increase the size of the arrays if this shows that
+you are not getting at least 20 clock ticks per test.
+-------------------------------------------------------------
+WARNING -- The above is only a rough guideline.
+For best results, please be sure you know the
+precision of your system timer.
+-------------------------------------------------------------
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:             203.7     0.019513     0.015713     0.035952
+Scale:             64.1     0.065074     0.049888     0.125447
+Add:              117.8     0.050894     0.040745     0.083235
+Triad:             53.2     0.112184     0.090200     0.191096
+-------------------------------------------------------------
+Solution Validates: avg error less than 1.000000e-13 on all three arrays
+-------------------------------------------------------------
